@@ -10,8 +10,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "typescript": "^5.7.2"
-  }
+  "license": "ISC"
 }
