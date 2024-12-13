@@ -2,5 +2,5 @@
     "ignore": ["*.test.ts", "test/*"],
     "watch": ["src", "config"],
     "ext": "ts",
-    "exec": "ts-node src/app.ts"
+    "exec": "cls && ts-node src/app.ts"
 }

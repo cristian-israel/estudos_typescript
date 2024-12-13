@@ -1,4 +1,3 @@
-const nome = 'Cristian';
-const sobrenome = 'Israel';
+import Log from './Functions/Log';
 
-console.log(nome + ' ' + sobrenome);
+Log('Hello, World!');
