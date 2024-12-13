@@ -1,1 +1,1 @@
-const nome = "João";
+console.log('Hello, world!');
