@@ -1,5 +1,5 @@
 {
-  "files": ["src/aapp.ts"],
+  "files": ["src/app.ts"],
   "include": ["src/**/*.ts"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
