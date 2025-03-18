@@ -1,17 +1,28 @@
-// Tuple
-const dadosPLataforma: [boolean, number, string] = [true, 1, 'netflix'];
-const dadosConta: [boolean, number, string, string?] = [true, 1, 'netflix', 'SAPCE-H'];
-const dadosCliente: [boolean, number, number, string, ...string[]] = [true, 2, 1, 'Cristian', 'teste', 'teste1'];
+const dadosCliente1: readonly [string, number] = ["Cristian", 21];
+const dadosCliente2: [string, number, string] = ["Cristian", 21, "Silva"];
+const dadosCliente3: [string, number, string, string?] = [
+  "Cristian",
+  21,
+  "Silva",
+];
+const dadosCliente4: [string, string, number, ...string[]] = [
+  "Cristian",
+  "Israel",
+  21,
+];
 
-dadosConta[1] = 654;
-dadosConta[2] = 'netflix - teste';
+console.log(dadosCliente1);
+console.log(dadosCliente2);
+console.log(dadosCliente3);
 
-console.log(dadosConta);
-console.log(dadosCliente);
+dadosCliente2[1] = 22;
+dadosCliente3[2] = "Israel";
 
-// Readyonly Array
-const array1: readonly string[] = ['Cristian', 'Israel'];
-const array2: ReadonlyArray<string> = ['Cristian', 'Israel'];
+console.log("\n\n");
+console.log(dadosCliente1);
+console.log(dadosCliente2);
+console.log(dadosCliente3);
 
-console.log(array1);
-console.log(array2);
+// readeonly
+const array1: readonly string[] = ["Cristian", "Israel"];
+const array2: ReadonlyArray<string> = ["Cristian", "Israel"]; 
