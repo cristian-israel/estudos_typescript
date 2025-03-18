@@ -1,11 +1,15 @@
-export function media(...args: Array<number>): number {
-  const soma = args.reduce((acc, value) => acc + value, 0);
-  return soma / args.length;
+function multiplicaArgs(...args: Array<number>): number {
+  return args.reduce((acc, valor) => acc * valor, 1);
 }
 
-export function concatenar(...args: Array<string>): string {
-  return args.join(' ');
+function concatenaArgs(...args: string[]): string {
+  return args.reduce((acc, valor) => acc + valor);
 }
 
-console.log(media(1, 2, 3, 4, 5));
-console.log(concatenar('Cristian', 'Israel', 'da', 'Silva'));
+function toUpperCase(...args: string[]): string[] {
+  return args.map((v) => v.toLocaleUpperCase());
+}
+
+console.log(multiplicaArgs(2, 2, 2, 2));
+console.log(concatenaArgs("a", "b", "c"));
+console.log(toUpperCase("a", "b", "c"));
